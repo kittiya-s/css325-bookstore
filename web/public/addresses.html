@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My addresses | Too Cute Books</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a href="/" class="logo">📚 Too Cute Books</a>
+    <nav id="nav"></nav>
+  </header>
+
+  <main class="container">
+    <div id="message" class="flash" hidden></div>
+
+    <h1>My addresses</h1>
+    <p id="empty" hidden>No address yet.</p>
+    <ul id="addressList" class="list"></ul>
+    <form id="addressForm" class="box narrow">
+      <h2>Add address</h2>
+      <label>Recipient name <input type="text" id="recipient_name" required></label>
+      <label>Address <input type="text" id="address_detail" required></label>
+      <label>Postal code <input type="text" id="postal_code" pattern="[0-9]{5}" maxlength="5" required></label>
+      <button>Save</button>
+    </form>
+  </main>
+
+  <footer class="foot">CSS325 Database Systems · Team Too Cute to Work</footer>
+
+  <script src="/js/common.js"></script>
+  <script src="/js/addresses.js"></script>
+</body>
+</html>

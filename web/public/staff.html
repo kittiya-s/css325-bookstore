@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard | Too Cute Books</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a href="/" class="logo">📚 Too Cute Books</a>
+    <nav id="nav"></nav>
+  </header>
+
+  <main class="container">
+    <div id="message" class="flash" hidden></div>
+
+    <h1>Dashboard</h1>
+    <div class="stats">
+      <div class="stat"><small>Orders</small><strong id="numOrders">-</strong></div>
+      <div class="stat"><small>Total sales</small><strong id="totalSales">-</strong></div>
+      <div class="stat"><small>Average per order</small><strong id="avgOrder">-</strong></div>
+    </div>
+    <div class="two-col">
+      <div class="box"><h2>Sales by category</h2><table id="byCategory"></table></div>
+      <div class="box"><h2>Sales by month</h2><table id="byMonth"></table></div>
+      <div class="box"><h2>Orders not paid yet</h2><table id="unpaid"></table></div>
+      <div class="box"><h2>Low / out of stock</h2><table id="lowStock"></table></div>
+      <div class="box"><h2>Customers by money spent</h2><table id="topCustomers"></table></div>
+      <div class="box"><h2>Books never ordered</h2><table id="neverOrdered"></table></div>
+    </div>
+  </main>
+
+  <footer class="foot">CSS325 Database Systems · Team Too Cute to Work</footer>
+
+  <script src="/js/common.js"></script>
+  <script src="/js/staff.js"></script>
+</body>
+</html>

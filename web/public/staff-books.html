@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Books | Too Cute Books</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a href="/" class="logo">📚 Too Cute Books</a>
+    <nav id="nav"></nav>
+  </header>
+
+  <main class="container">
+    <div id="message" class="flash" hidden></div>
+
+    <h1>Books</h1>
+    <form id="addBookForm" class="box">
+      <h2>Add a book</h2>
+      <div class="form-row">
+        <input type="text" id="title" placeholder="Title" required>
+        <input type="text" id="author" placeholder="Author" required>
+        <select id="category_id" required></select>
+        <input type="number" id="price" placeholder="Price" step="0.01" required>
+        <input type="number" id="stock_qty" placeholder="Stock" min="0" value="0">
+        <button>Add</button>
+      </div>
+    </form>
+    <table class="wide" id="books"></table>
+  </main>
+
+  <footer class="foot">CSS325 Database Systems · Team Too Cute to Work</footer>
+
+  <script src="/js/common.js"></script>
+  <script src="/js/staff-books.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Register | Too Cute Books</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a href="/" class="logo">📚 Too Cute Books</a>
+    <nav id="nav"></nav>
+  </header>
+
+  <main class="container">
+    <div id="message" class="flash" hidden></div>
+
+    <form id="registerForm" class="box narrow">
+      <h1>Register</h1>
+      <label>Name <input type="text" id="name" required></label>
+      <label>Email <input type="email" id="email" required></label>
+      <label>Password <input type="password" id="password" minlength="6" required></label>
+      <button>Create account</button>
+    </form>
+  </main>
+
+  <footer class="foot">CSS325 Database Systems · Team Too Cute to Work</footer>
+
+  <script src="/js/common.js"></script>
+  <script src="/js/register.js"></script>
+</body>
+</html>
